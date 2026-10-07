@@ -47,7 +47,7 @@ Transcripts are cached in `journal/transcripts.json`, so you can rerun the notes
 You need Python 3.10+, `ffmpeg` on your PATH and [Ollama](https://ollama.com/download).
 
 ```bash
-git clone <REPO_URL> && cd fieldmemo
+git clone https://github.com/darrenanderson94/fieldmemo.git && cd fieldmemo
 python -m venv .venv && . .venv/bin/activate
 pip install -e .
 
