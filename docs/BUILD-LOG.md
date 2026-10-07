@@ -38,7 +38,7 @@ clearer than a person talking on a hill.
   council rights of way and green woodpecker on `base.en`. `small.en` with the glossary also got
   "tub" right, so it's the default. "Stile" came out right in one run and as "style" in another after
   the prompt's wording changed slightly, which is how fragile prompt steering is.
-- `small.en` took 1.4 to 1.8 s per memo (5 to 9 s clips) on CPU.
+- `small.en` took 1.4 to 1.8 s per memo (3 to 9 s clips) on CPU.
 
 **Notes step, first try with Gemma 3 1B.** It labelled everything "seen", including a woodpecker the
 memo says was heard and not seen; split "two buzzards, maybe three" into buzzards plus "trees x3";
@@ -52,7 +52,7 @@ default and Gemma 3 1B is the low-memory option.
 **Grounding check.** Every item's subject must be made of words that are in the transcript
 (with crude plural folding: buzzards/buzzard, birches/birch). Counts must appear in the memo
 ("two", "a dozen", "12"). Items that fail are struck out in the journal, not silently dropped.
-On the next Gemma 3 1B run it caught a "fly agaric" invented in the car-park memo.
+On the next Gemma 3 1B run it caught a "fly agaric ... a small, pale mushroom growing on a stone" invented in the car-park memo, which mentions no fungi at all.
 
 **The check then rejected a correct answer.** Gemma 4 read Whisper's "style" as "stile", which was
 right, and the check threw it out because "stile" wasn't in the transcript. Fix: a subject word
