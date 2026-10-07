@@ -3,6 +3,7 @@
     fieldmemo MEMO_FOLDER [--gpx track.gpx] [--out journal/]
 """
 import argparse
+import hashlib
 import json
 import sys
 import time
@@ -54,6 +55,8 @@ def main(argv=None):
     out.mkdir(parents=True, exist_ok=True)
     fixes = read_gpx(a.gpx) if a.gpx else []
 
+    # cache key uses the glossary's content, not its path, so caches are portable
+    gloss_id = hashlib.sha1(Path(a.glossary).read_bytes()).hexdigest()[:10] if a.glossary else "none"
     cache_path = out / "transcripts.json"
     cache = {} if a.retranscribe or not cache_path.exists() else json.loads(cache_path.read_text())
     transcriber = None
@@ -63,7 +66,7 @@ def main(argv=None):
         info = probe(f)
         when, source = recorded_at(f, info["tags"], tz)
         when += timedelta(seconds=a.clock_offset)
-        key = f"{f.name}|{f.stat().st_size}|{a.whisper}|{a.glossary}"
+        key = f"{f.name}|{f.stat().st_size}|{a.whisper}|glossary:{gloss_id}"
         if key not in cache:
             if transcriber is None:
                 from .transcribe import Transcriber
