@@ -1,0 +1,56 @@
+# Words Whisper tends to mishear on a British countryside walk.
+# One term per line; lines starting with # are ignored. Edit freely.
+# Birds
+buzzard
+red kite
+kestrel
+sparrowhawk
+green woodpecker
+great spotted woodpecker
+jay
+jackdaw
+rook
+wren
+robin
+blackbird
+song thrush
+mistle thrush
+fieldfare
+redwing
+goldfinch
+chiffchaff
+skylark
+meadow pipit
+curlew
+lapwing
+grey heron
+little egret
+dipper
+grey wagtail
+tawny owl
+barn owl
+# Fungi and plants
+fly agaric
+chanterelle
+puffball
+bracket fungus
+hawthorn
+blackthorn
+sloes
+bramble
+blackberries
+rowan
+birch
+bracken
+heather
+gorse
+# Paths and access
+stile
+kissing gate
+waymark
+bridleway
+footpath
+rights of way
+trig point
+cairn
+council

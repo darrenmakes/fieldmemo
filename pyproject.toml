@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fieldmemo"
+version = "0.1.0"
+description = "Talk on the trail, read it at home: voice memos + GPX -> geotagged field journal, offline with Whisper and Gemma."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["faster-whisper>=1.1", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+samples = ["piper-tts"]
+
+[project.scripts]
+fieldmemo = "fieldmemo.cli:main"
+
+[tool.setuptools]
+packages = ["fieldmemo"]
+
+[tool.setuptools.package-data]
+fieldmemo = ["glossary_uk.txt"]

@@ -1,0 +1,115 @@
+[
+ {
+  "file": "Recording_20261008_100211.m4a",
+  "raw": {
+   "title": "car park ground condition",
+   "items": [
+    {
+     "kind": "hazard",
+     "subject": "ground",
+     "count": null,
+     "details": "soaked from last night"
+    },
+    {
+     "kind": "hazard",
+     "subject": "path",
+     "count": null,
+     "details": "by the first gate is basically a pond"
+    }
+   ]
+  },
+  "rejected": []
+ },
+ {
+  "file": "Recording_20261008_101940.m4a",
+  "raw": {
+   "title": "buzzards circling ridge",
+   "items": [
+    {
+     "kind": "seen",
+     "subject": "buzzard",
+     "count": null,
+     "details": "two circling over the ridge, keep dropping behind the trees"
+    }
+   ]
+  },
+  "rejected": []
+ },
+ {
+  "file": "Recording_20261008_104105.m4a",
+  "raw": {
+   "title": "Field Notes and Task",
+   "items": [
+    {
+     "kind": "todo",
+     "subject": "stile",
+     "count": null,
+     "details": "note to self the style after the second field has a broken step"
+    },
+    {
+     "kind": "todo",
+     "subject": "stile",
+     "count": null,
+     "details": "report it to the council rights of way team when i get home"
+    }
+   ]
+  },
+  "rejected": []
+ },
+ {
+  "file": "New Recording 4.m4a",
+  "raw": {
+   "title": "fly agaric under birch",
+   "items": [
+    {
+     "kind": "seen",
+     "subject": "fly agaric",
+     "count": 12,
+     "details": "red caps under the birch"
+    }
+   ]
+  },
+  "rejected": []
+ },
+ {
+  "file": "Recording_20261008_111202.m4a",
+  "raw": {
+   "title": "green woodpecker call",
+   "items": [
+    {
+     "kind": "heard",
+     "subject": "green woodpecker",
+     "count": null,
+     "details": "laughing call"
+    }
+   ]
+  },
+  "rejected": []
+ },
+ {
+  "file": "Recording_20261008_112015.m4a",
+  "raw": null,
+  "rejected": []
+ },
+ {
+  "file": "Recording_20261008_113748.m4a",
+  "raw": {
+   "title": "blackberry condition and future collection",
+   "items": [
+    {
+     "kind": "seen",
+     "subject": "blackberry",
+     "count": null,
+     "details": "still on the hedge by the lane, but most on mushy now"
+    },
+    {
+     "kind": "todo",
+     "subject": "tub",
+     "count": null,
+     "details": "come back with a tub in early September next year"
+    }
+   ]
+  },
+  "rejected": []
+ }
+]
